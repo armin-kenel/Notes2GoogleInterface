@@ -5,6 +5,11 @@ public class InterfacePerson {
 	String firstName = "";
 	String middleName = "";
 	String lastName = "";
+	String companyName = "";
+	String jobTitle = "";
+	String categories = "";
+	String birthDate = "";
+	String comment = "";
 	String phoneBusiness = "";
 	String phoneBusinessDirect = "";
 	String phoneBusiness2 = "";
@@ -15,15 +20,12 @@ public class InterfacePerson {
 	String phonePrivate = "";
 	String faxPrivate = "";
 	String faxBusiness = "";
-	String emergencyNumber = "";
-	String companyName = "";
-	String jobTitle = "";
 	String eMailBusiness = "";
 	String eMailBusiness2 = "";
 	String eMailPrivate = "";
 	String eMailPrivate2 = "";
+	String emergencyNumber = "";
 	String modified = "";
-	String categories = "";
 
 	public String getUid() {
 		return uid;
@@ -55,6 +57,46 @@ public class InterfacePerson {
 
 	public void setLastName(final String lastName) {
 		this.lastName = lastName;
+	}
+
+	public String getCompanyName() {
+		return companyName;
+	}
+
+	public void setCompanyName(final String companyName) {
+		this.companyName = companyName;
+	}
+
+	public String getJobTitle() {
+		return jobTitle;
+	}
+
+	public void setJobTitle(final String jobTitle) {
+		this.jobTitle = jobTitle;
+	}
+
+	public String getCategories() {
+		return categories;
+	}
+
+	public void setCategories(final String categories) {
+		this.categories = categories;
+	}
+
+	public String getBirthDate() {
+		return birthDate;
+	}
+
+	public void setBirthDate(final String birthDate) {
+		this.birthDate = birthDate;
+	}
+
+	public String getComment() {
+		return comment;
+	}
+
+	public void setComment(final String comment) {
+		this.comment = comment;
 	}
 
 	public String getPhoneBusiness() {
@@ -137,30 +179,6 @@ public class InterfacePerson {
 		this.faxBusiness = faxBusiness;
 	}
 
-	public String getEmergencyNumber() {
-		return emergencyNumber;
-	}
-
-	public void setEmergencyNumber(final String emergencyNumber) {
-		this.emergencyNumber = emergencyNumber;
-	}
-
-	public String getCompanyName() {
-		return companyName;
-	}
-
-	public void setCompanyName(final String companyName) {
-		this.companyName = companyName;
-	}
-
-	public String getJobTitle() {
-		return jobTitle;
-	}
-
-	public void setJobTitle(final String jobTitle) {
-		this.jobTitle = jobTitle;
-	}
-
 	public String geteMailBusiness() {
 		return eMailBusiness;
 	}
@@ -193,6 +211,14 @@ public class InterfacePerson {
 		this.eMailPrivate2 = eMailPrivate2;
 	}
 
+	public String getEmergencyNumber() {
+		return emergencyNumber;
+	}
+
+	public void setEmergencyNumber(final String emergencyNumber) {
+		this.emergencyNumber = emergencyNumber;
+	}
+
 	public String getModified() {
 		return modified;
 	}
@@ -201,24 +227,16 @@ public class InterfacePerson {
 		this.modified = modified;
 	}
 
-	public String getCategories() {
-		return categories;
-	}
-
-	public void setCategories(final String categories) {
-		this.categories = categories;
-	}
-
 	@Override
 	public String toString() {
 		return "InterfacePerson [uid=" + uid + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
-				+ lastName + ", phoneBusiness=" + phoneBusiness + ", phoneBusinessDirect=" + phoneBusinessDirect
-				+ ", phoneBusiness2=" + phoneBusiness2 + ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2="
-				+ mobileBusiness2 + ", mobilePrivate=" + mobilePrivate + ", mobilePrivate2=" + mobilePrivate2
-				+ ", phonePrivate=" + phonePrivate + ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness
-				+ ", emergencyNumber=" + emergencyNumber + ", companyName=" + companyName + ", jobTitle=" + jobTitle
-				+ ", eMailBusiness=" + eMailBusiness + ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate="
-				+ eMailPrivate + ", eMailPrivate2=" + eMailPrivate2 + ", modified=" + modified + ", categories="
-				+ categories + "]";
+				+ lastName + ", companyName=" + companyName + ", jobTitle=" + jobTitle + ", categories=" + categories
+				+ ", birthDate=" + birthDate + ", comment=" + comment + ", phoneBusiness=" + phoneBusiness
+				+ ", phoneBusinessDirect=" + phoneBusinessDirect + ", phoneBusiness2=" + phoneBusiness2
+				+ ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2=" + mobileBusiness2 + ", mobilePrivate="
+				+ mobilePrivate + ", mobilePrivate2=" + mobilePrivate2 + ", phonePrivate=" + phonePrivate
+				+ ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness + ", eMailBusiness=" + eMailBusiness
+				+ ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate=" + eMailPrivate + ", eMailPrivate2="
+				+ eMailPrivate2 + ", emergencyNumber=" + emergencyNumber + ", modified=" + modified + "]";
 	}
 }
