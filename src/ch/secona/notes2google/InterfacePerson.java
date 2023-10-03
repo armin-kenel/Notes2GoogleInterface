@@ -10,6 +10,20 @@ public class InterfacePerson {
 	String categories = "";
 	String birthDate = "";
 	String comment = "";
+	String webSite = "";
+	String modified = "";
+	// address stuff
+	String streetAddress = "";
+	String zip = "";
+	String city = "";
+	String state = "";
+	String country = "";
+	String officeStreetAddress = "";
+	String officeZip = "";
+	String officeCity = "";
+	String officeState = "";
+	String officeCountry = "";
+	// phone numbers
 	String phoneBusiness = "";
 	String phoneBusinessDirect = "";
 	String phoneBusiness2 = "";
@@ -25,7 +39,6 @@ public class InterfacePerson {
 	String eMailPrivate = "";
 	String eMailPrivate2 = "";
 	String emergencyNumber = "";
-	String modified = "";
 
 	public String getUid() {
 		return uid;
@@ -97,6 +110,102 @@ public class InterfacePerson {
 
 	public void setComment(final String comment) {
 		this.comment = comment;
+	}
+
+	public String getWebSite() {
+		return webSite;
+	}
+
+	public void setWebSite(final String webSite) {
+		this.webSite = webSite;
+	}
+
+	public String getModified() {
+		return modified;
+	}
+
+	public void setModified(final String modified) {
+		this.modified = modified;
+	}
+
+	public String getStreetAddress() {
+		return streetAddress;
+	}
+
+	public void setStreetAddress(final String streetAddress) {
+		this.streetAddress = streetAddress;
+	}
+
+	public String getZip() {
+		return zip;
+	}
+
+	public void setZip(final String zip) {
+		this.zip = zip;
+	}
+
+	public String getCity() {
+		return city;
+	}
+
+	public void setCity(final String city) {
+		this.city = city;
+	}
+
+	public String getState() {
+		return state;
+	}
+
+	public void setState(final String state) {
+		this.state = state;
+	}
+
+	public String getCountry() {
+		return country;
+	}
+
+	public void setCountry(final String country) {
+		this.country = country;
+	}
+
+	public String getOfficeStreetAddress() {
+		return officeStreetAddress;
+	}
+
+	public void setOfficeStreetAddress(final String officeStreetAddress) {
+		this.officeStreetAddress = officeStreetAddress;
+	}
+
+	public String getOfficeZip() {
+		return officeZip;
+	}
+
+	public void setOfficeZip(final String officeZip) {
+		this.officeZip = officeZip;
+	}
+
+	public String getOfficeCity() {
+		return officeCity;
+	}
+
+	public void setOfficeCity(final String officeCity) {
+		this.officeCity = officeCity;
+	}
+
+	public String getOfficeState() {
+		return officeState;
+	}
+
+	public void setOfficeState(final String officeState) {
+		this.officeState = officeState;
+	}
+
+	public String getOfficeCountry() {
+		return officeCountry;
+	}
+
+	public void setOfficeCountry(final String officeCountry) {
+		this.officeCountry = officeCountry;
 	}
 
 	public String getPhoneBusiness() {
@@ -219,24 +328,19 @@ public class InterfacePerson {
 		this.emergencyNumber = emergencyNumber;
 	}
 
-	public String getModified() {
-		return modified;
-	}
-
-	public void setModified(final String modified) {
-		this.modified = modified;
-	}
-
 	@Override
 	public String toString() {
 		return "InterfacePerson [uid=" + uid + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
 				+ lastName + ", companyName=" + companyName + ", jobTitle=" + jobTitle + ", categories=" + categories
-				+ ", birthDate=" + birthDate + ", comment=" + comment + ", phoneBusiness=" + phoneBusiness
-				+ ", phoneBusinessDirect=" + phoneBusinessDirect + ", phoneBusiness2=" + phoneBusiness2
-				+ ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2=" + mobileBusiness2 + ", mobilePrivate="
-				+ mobilePrivate + ", mobilePrivate2=" + mobilePrivate2 + ", phonePrivate=" + phonePrivate
-				+ ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness + ", eMailBusiness=" + eMailBusiness
-				+ ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate=" + eMailPrivate + ", eMailPrivate2="
-				+ eMailPrivate2 + ", emergencyNumber=" + emergencyNumber + ", modified=" + modified + "]";
+				+ ", birthDate=" + birthDate + ", comment=" + comment + ", webSite=" + webSite + ", modified="
+				+ modified + ", streetAddress=" + streetAddress + ", zip=" + zip + ", city=" + city + ", state=" + state
+				+ ", country=" + country + ", officeStreetAddress=" + officeStreetAddress + ", officeZip=" + officeZip
+				+ ", officeCity=" + officeCity + ", officeState=" + officeState + ", officeCountry=" + officeCountry
+				+ ", phoneBusiness=" + phoneBusiness + ", phoneBusinessDirect=" + phoneBusinessDirect
+				+ ", phoneBusiness2=" + phoneBusiness2 + ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2="
+				+ mobileBusiness2 + ", mobilePrivate=" + mobilePrivate + ", mobilePrivate2=" + mobilePrivate2
+				+ ", phonePrivate=" + phonePrivate + ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness
+				+ ", eMailBusiness=" + eMailBusiness + ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate="
+				+ eMailPrivate + ", eMailPrivate2=" + eMailPrivate2 + ", emergencyNumber=" + emergencyNumber + "]";
 	}
 }
