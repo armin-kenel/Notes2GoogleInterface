@@ -10,6 +10,8 @@ public class InterfacePerson {
 	String categories = "";
 	String birthDate = "";
 	String comment = "";
+	String spouse = "";
+	String children = "";
 	String webSite = "";
 	String modified = "";
 	// address stuff
@@ -110,6 +112,22 @@ public class InterfacePerson {
 
 	public void setComment(final String comment) {
 		this.comment = comment;
+	}
+
+	public String getSpouse() {
+		return spouse;
+	}
+
+	public void setSpouse(final String spouse) {
+		this.spouse = spouse;
+	}
+
+	public String getChildren() {
+		return children;
+	}
+
+	public void setChildren(final String children) {
+		this.children = children;
 	}
 
 	public String getWebSite() {
@@ -328,19 +346,24 @@ public class InterfacePerson {
 		this.emergencyNumber = emergencyNumber;
 	}
 
+	public String getShortInfo() {
+		return firstName + " " + lastName + " (" + uid + ")";
+	}
+
 	@Override
 	public String toString() {
 		return "InterfacePerson [uid=" + uid + ", firstName=" + firstName + ", middleName=" + middleName + ", lastName="
 				+ lastName + ", companyName=" + companyName + ", jobTitle=" + jobTitle + ", categories=" + categories
-				+ ", birthDate=" + birthDate + ", comment=" + comment + ", webSite=" + webSite + ", modified="
-				+ modified + ", streetAddress=" + streetAddress + ", zip=" + zip + ", city=" + city + ", state=" + state
-				+ ", country=" + country + ", officeStreetAddress=" + officeStreetAddress + ", officeZip=" + officeZip
-				+ ", officeCity=" + officeCity + ", officeState=" + officeState + ", officeCountry=" + officeCountry
-				+ ", phoneBusiness=" + phoneBusiness + ", phoneBusinessDirect=" + phoneBusinessDirect
-				+ ", phoneBusiness2=" + phoneBusiness2 + ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2="
-				+ mobileBusiness2 + ", mobilePrivate=" + mobilePrivate + ", mobilePrivate2=" + mobilePrivate2
-				+ ", phonePrivate=" + phonePrivate + ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness
-				+ ", eMailBusiness=" + eMailBusiness + ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate="
-				+ eMailPrivate + ", eMailPrivate2=" + eMailPrivate2 + ", emergencyNumber=" + emergencyNumber + "]";
+				+ ", birthDate=" + birthDate + ", comment=" + comment + ", spouse=" + spouse + ", children=" + children
+				+ ", webSite=" + webSite + ", modified=" + modified + ", streetAddress=" + streetAddress + ", zip="
+				+ zip + ", city=" + city + ", state=" + state + ", country=" + country + ", officeStreetAddress="
+				+ officeStreetAddress + ", officeZip=" + officeZip + ", officeCity=" + officeCity + ", officeState="
+				+ officeState + ", officeCountry=" + officeCountry + ", phoneBusiness=" + phoneBusiness
+				+ ", phoneBusinessDirect=" + phoneBusinessDirect + ", phoneBusiness2=" + phoneBusiness2
+				+ ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2=" + mobileBusiness2 + ", mobilePrivate="
+				+ mobilePrivate + ", mobilePrivate2=" + mobilePrivate2 + ", phonePrivate=" + phonePrivate
+				+ ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness + ", eMailBusiness=" + eMailBusiness
+				+ ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate=" + eMailPrivate + ", eMailPrivate2="
+				+ eMailPrivate2 + ", emergencyNumber=" + emergencyNumber + "]";
 	}
 }
