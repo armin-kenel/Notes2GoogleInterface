@@ -31,8 +31,10 @@ public class InterfacePerson {
 	String phoneBusiness2 = "";
 	String mobileBusiness = "";
 	String mobileBusiness2 = "";
+	String mobileBusiness3 = "";
 	String mobilePrivate = "";
 	String mobilePrivate2 = "";
+	String mobilePrivate3 = "";
 	String phonePrivate = "";
 	String faxPrivate = "";
 	String faxBusiness = "";
@@ -266,6 +268,14 @@ public class InterfacePerson {
 		this.mobileBusiness2 = mobileBusiness2;
 	}
 
+	public String getMobileBusiness3() {
+		return mobileBusiness3;
+	}
+
+	public void setMobileBusiness3(final String mobileBusiness3) {
+		this.mobileBusiness3 = mobileBusiness3;
+	}
+
 	public String getMobilePrivate() {
 		return mobilePrivate;
 	}
@@ -280,6 +290,14 @@ public class InterfacePerson {
 
 	public void setMobilePrivate2(final String mobilePrivate2) {
 		this.mobilePrivate2 = mobilePrivate2;
+	}
+
+	public String getMobilePrivate3() {
+		return mobilePrivate3;
+	}
+
+	public void setMobilePrivate3(final String mobilePrivate3) {
+		this.mobilePrivate3 = mobilePrivate3;
 	}
 
 	public String getPhonePrivate() {
@@ -346,6 +364,9 @@ public class InterfacePerson {
 		this.emergencyNumber = emergencyNumber;
 	}
 
+	/*
+	 * don't remove - it's not generated
+	 */
 	public String getShortInfo() {
 		return firstName + " " + lastName + " (" + uid + ")";
 	}
@@ -360,10 +381,11 @@ public class InterfacePerson {
 				+ officeStreetAddress + ", officeZip=" + officeZip + ", officeCity=" + officeCity + ", officeState="
 				+ officeState + ", officeCountry=" + officeCountry + ", phoneBusiness=" + phoneBusiness
 				+ ", phoneBusinessDirect=" + phoneBusinessDirect + ", phoneBusiness2=" + phoneBusiness2
-				+ ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2=" + mobileBusiness2 + ", mobilePrivate="
-				+ mobilePrivate + ", mobilePrivate2=" + mobilePrivate2 + ", phonePrivate=" + phonePrivate
-				+ ", faxPrivate=" + faxPrivate + ", faxBusiness=" + faxBusiness + ", eMailBusiness=" + eMailBusiness
-				+ ", eMailBusiness2=" + eMailBusiness2 + ", eMailPrivate=" + eMailPrivate + ", eMailPrivate2="
-				+ eMailPrivate2 + ", emergencyNumber=" + emergencyNumber + "]";
+				+ ", mobileBusiness=" + mobileBusiness + ", mobileBusiness2=" + mobileBusiness2 + ", mobileBusiness3="
+				+ mobileBusiness3 + ", mobilePrivate=" + mobilePrivate + ", mobilePrivate2=" + mobilePrivate2
+				+ ", mobilePrivate3=" + mobilePrivate3 + ", phonePrivate=" + phonePrivate + ", faxPrivate=" + faxPrivate
+				+ ", faxBusiness=" + faxBusiness + ", eMailBusiness=" + eMailBusiness + ", eMailBusiness2="
+				+ eMailBusiness2 + ", eMailPrivate=" + eMailPrivate + ", eMailPrivate2=" + eMailPrivate2
+				+ ", emergencyNumber=" + emergencyNumber + "]";
 	}
 }
